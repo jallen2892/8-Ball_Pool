@@ -11,6 +11,7 @@ public class Scoring_Balls : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        Debug.Log("Exists");
 
     }
 
@@ -26,5 +27,9 @@ public class Scoring_Balls : MonoBehaviour
         Debug.Log("Working");
 
     }
-
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("1");
+        Debug.Log(collision);
+    }
 }
