@@ -12,24 +12,23 @@ public class Scoring_Balls : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         Debug.Log("Exists");
-
+    
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-
-        Debug.Log("Working");
-
-    }
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("1");
-        Debug.Log(collision);
+        Debug.Log(collision.gameObject.name, collision.gameObject);
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        Debug.Log("3");
+        Debug.Log(collision.gameObject.name, collision.gameObject);
     }
 }
