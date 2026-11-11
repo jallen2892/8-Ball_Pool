@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1996380216045668426}
   - component: {fileID: 8719137689833100238}
   - component: {fileID: 2199042610419150237}
+  - component: {fileID: 6422903891868386730}
   m_Layer: 0
   m_Name: ColourBall
   m_TagString: Untagged
@@ -123,8 +124,8 @@ Rigidbody:
   m_GameObject: {fileID: 6670341275107385719}
   serializedVersion: 5
   m_Mass: 0.118
-  m_LinearDamping: 0
-  m_AngularDamping: 0
+  m_LinearDamping: 1.2
+  m_AngularDamping: 1000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -153,3 +154,17 @@ ConstantForce:
   m_RelativeForce: {x: 0, y: 0, z: 0}
   m_Torque: {x: 0, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}
+--- !u!114 &6422903891868386730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6670341275107385719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b5e5ce1d2e9e4a4ab0cc147226c0939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::checkballvelocity
+  rb: {fileID: 8719137689833100238}
+  stationary: 0
