@@ -22,6 +22,7 @@ public class Scoring_Balls : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Triggered");
+        
 
     }
 
