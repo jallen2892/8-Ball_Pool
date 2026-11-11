@@ -1003,7 +1003,7 @@ GameObject:
   - component: {fileID: 720199832}
   m_Layer: 0
   m_Name: Ball_Test_for_collisions (1)
-  m_TagString: Untagged
+  m_TagString: Ball_Potted
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

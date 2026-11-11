@@ -22,6 +22,10 @@ public class Scoring_Balls : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Triggered");
+        if (other.gameObject.CompareTag("Ball_Potted"))
+        {
+            other.gameObject.SetActive(false);
+        }
 
     }
 
