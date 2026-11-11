@@ -43,10 +43,16 @@ public class PlayerController : MonoBehaviour
         // Apply force to the Rigidbody to move the player.
         rb.AddForce(movement * speed);
     }
-    public void OnCollisionEnter(Collision collision)
+
+
+
+    //Code I Wrote
+
+    private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("2");
-        Debug.Log(collision.gameObject.name, collision.gameObject);
+        Debug.Log("Ball colliding");
+        Debug.Log(collision.gameObject);
     }
-   
+
+
 }
