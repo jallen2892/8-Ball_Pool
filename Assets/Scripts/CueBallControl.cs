@@ -1,13 +1,16 @@
 using UnityEngine;
+using TMPro;
+
 
 public class CueBallControl : MonoBehaviour
+
 {
     bool canPlay = true;
     bool leftPressed = false;
     bool rightPressed = false;
     public Rigidbody rb;
     public int Power = 4;
-
+    public TextMeshProUGUI displayText ;
 
     public Rigidbody Colourball1;
     public Rigidbody Colourball2;
@@ -86,6 +89,23 @@ public class CueBallControl : MonoBehaviour
             }
 
 
+
+            if (Input.GetKey(KeyCode.Space))
+            {
+
+                rb.AddRelativeForce(Vector3.forward * Power);
+
+            }
+
+            displayText.text = Power.ToString();
+
+        }
+        else
+        {
+            transform.Rotate(0, 0, 0);
+
+        }
+
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 if (Power < 50)
@@ -104,17 +124,9 @@ public class CueBallControl : MonoBehaviour
 
             }
 
-            if (Input.GetKey(KeyCode.Space))
-            {
-
-                rb.AddRelativeForce(Vector3.forward * Power);
-
-            }
-            
-
-        }
-
     }
+
 }
+
 
 
