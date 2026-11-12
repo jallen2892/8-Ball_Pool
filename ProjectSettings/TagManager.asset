@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ball_Potted
+  - Cue_Ball_Potted
   layers:
   - Default
   - TransparentFX

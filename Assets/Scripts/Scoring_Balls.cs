@@ -3,6 +3,7 @@ using UnityEngine;
 public class Scoring_Balls : MonoBehaviour
 {
     private Rigidbody rb;
+    public int score = 0;
 
     
 
@@ -21,11 +22,13 @@ public class Scoring_Balls : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Triggered");
         if (other.gameObject.CompareTag("Ball_Potted"))
         {
+            score++;
             other.gameObject.SetActive(false);
+
         }
+
 
     }
 

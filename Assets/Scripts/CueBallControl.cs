@@ -88,7 +88,7 @@ public class CueBallControl : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                if (Power < 25)
+                if (Power < 50)
                 {
                     Power += 1;
                 }
