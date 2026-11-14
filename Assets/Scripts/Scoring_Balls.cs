@@ -20,12 +20,12 @@ public class Scoring_Balls : MonoBehaviour
        
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)//Function that triggers when a ball collides with the holes
     {
-        if (other.gameObject.CompareTag("Ball_Potted"))
+        if (other.gameObject.CompareTag("Ball_Potted"))//Checking if it is one of the balls and not the cue ball
         {
-            score++;
-            other.gameObject.SetActive(false);
+            score++;//Increasing the score
+            other.gameObject.SetActive(false);//Making the balls inactive to act as though they have been potted
 
         }
 
