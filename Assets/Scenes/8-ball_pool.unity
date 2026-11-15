@@ -559,7 +559,7 @@ Transform:
   m_GameObject: {fileID: 168321220}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -4.44, y: 0.25, z: 0.584}
+  m_LocalPosition: {x: -4.4, y: 0.25, z: 0.38}
   m_LocalScale: {x: 0.48000002, y: 0.48000002, z: 0.48000002}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1435,6 +1435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a107e83de5011d44ba33c69757ce207e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Scoring_Balls
+  rb: {fileID: 168321226}
   score: 0
 --- !u!1 &483728933
 GameObject:
@@ -2139,6 +2140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a107e83de5011d44ba33c69757ce207e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Scoring_Balls
+  rb: {fileID: 168321226}
   score: 0
 --- !u!54 &987338157
 Rigidbody:
@@ -2452,6 +2454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a107e83de5011d44ba33c69757ce207e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  rb: {fileID: 168321226}
   score: 0
 --- !u!1 &1098927346
 GameObject:
@@ -2608,6 +2611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a107e83de5011d44ba33c69757ce207e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Scoring_Balls
+  rb: {fileID: 168321226}
   score: 0
 --- !u!1 &1208188218
 GameObject:
@@ -2737,6 +2741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a107e83de5011d44ba33c69757ce207e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Scoring_Balls
+  rb: {fileID: 168321226}
   score: 0
 --- !u!54 &1208188224
 Rigidbody:
@@ -3333,6 +3338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a107e83de5011d44ba33c69757ce207e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Scoring_Balls
+  rb: {fileID: 168321226}
   score: 0
 --- !u!54 &1324329660
 Rigidbody:
@@ -3977,7 +3983,7 @@ Transform:
   m_GameObject: {fileID: 1772811673}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -10.06, y: 0.25, z: 0.58400065}
+  m_LocalPosition: {x: -10.02, y: 0.25, z: 0.38000065}
   m_LocalScale: {x: 10, y: 0.1, z: 0.10000005}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4541,6 +4547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a107e83de5011d44ba33c69757ce207e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Scoring_Balls
+  rb: {fileID: 168321226}
   score: 0
 --- !u!4 &2111888660 stripped
 Transform:

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Scoring_Balls : MonoBehaviour
 {
-    private Rigidbody rb;
+    public Rigidbody rb;
     public int score = 0;
 
     
@@ -11,7 +11,7 @@ public class Scoring_Balls : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+
     }
 
     // Update is called once per frame
@@ -28,8 +28,11 @@ public class Scoring_Balls : MonoBehaviour
             other.gameObject.SetActive(false);//Making the balls inactive to act as though they have been potted
 
         }
-
-
+        if (other.gameObject.CompareTag("Cue_Ball_Potted"))//Checking if it is the cue ball
+        {
+             rb.linearVelocity = new Vector3(0,0);//Stopping ball from moving
+             rb.transform.position = new Vector3(-4.44f, 0.25f, 0.38f);//Resetting position
+        }
     }
 
 }
