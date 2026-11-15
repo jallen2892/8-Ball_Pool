@@ -24,7 +24,9 @@ public class Scoring_Balls : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Ball_Potted"))//Checking if it is one of the balls and not the cue ball
         {
+
             score++;//Increasing the score
+            
             other.gameObject.SetActive(false);//Making the balls inactive to act as though they have been potted
 
         }
